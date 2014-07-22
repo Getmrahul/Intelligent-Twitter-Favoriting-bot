@@ -12,7 +12,7 @@ print twitter_api
 
 
 statuses = twitter_api.statuses.user_timeline(screen_name = '@xyz', max_count= 30, include_entities=1 )
-#q = ''
+
 for tweet in statuses:
 	try:
 		for hashtag in tweet['entities']['hashtags']:
