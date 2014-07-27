@@ -7,3 +7,6 @@ I have kept the limit of favorities per hashtag as 5, per execution, because ove
 
 New commit feature:
 Eliminating redundant hashtags to imporve efficiency.
+
+TODO:
+Proxy Authentication for the code to work behind a Proxy Server
