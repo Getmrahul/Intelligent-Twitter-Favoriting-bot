@@ -1,7 +1,7 @@
 Intelligent-Twitter-Favoriting-bot
 ==================================
 
-Installation
+Installation: 
 pip install twitter
 
 The working of this code is simple. After Authenticating the user, the code reads the hashtag you mention and favorites tweets by others on the same topic, using hashtags. 
