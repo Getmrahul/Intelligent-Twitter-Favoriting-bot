@@ -26,4 +26,3 @@ for k in hasharray:
 			print("favorited: %s" % (result['text'].encode("utf-8")))
 		except twitter.api.TwitterHTTPError as e:
 			print("error: %s" % (str(e)))
-
