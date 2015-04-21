@@ -22,16 +22,16 @@ hasharray = ['#tagsdock','#instagram','#hashtags','#vine']
 #		print("error: %s" % (str(e)))
 count = 5
 print hasharray
-newarray = []
+#newarray = []
 
-for i in hasharray:
-	if i not in newarray:
-		newarray.append(i)
-print newarray
+#for i in hasharray:
+#	if i not in newarray:
+#		newarray.append(i)
+#print newarray
 
-for k in newarray:
-	print str(i)
-	search_results = twitter_api.search.tweets(q=str(i), count=count)
+for k in hasharray:
+	print k
+	search_results = twitter_api.search.tweets(q=k, count=count)
 	stat = search_results['statuses']
 	for tweets in stat:
 		try:
