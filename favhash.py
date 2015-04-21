@@ -9,16 +9,17 @@ auth = twitter.oauth.OAuth(OAUTH_TOKEN, OAUTH_TOKEN_SECRET, CONSUMER_KEY, CONSUM
 twitter_api = twitter.Twitter(auth=auth)
 print twitter_api
 
-hasharray = []
-statuses = twitter_api.statuses.user_timeline(screen_name = '@xyz', max_count= 30, include_entities=1 )
-for tweet in statuses:
-	try:
-		for hashtag in tweet['entities']['hashtags']:
-			print hashtag['text']
-			hashtagtext = '#' +hashtag['text'] 
-			hasharray.append(hashtagtext)
-	except twitter.api.TwitterHTTPError as e:
-		print("error: %s" % (str(e)))
+#Add hastag in the below array
+hasharray = ['#tagsdock','#instagram','#hashtags','#vine']
+#statuses = twitter_api.statuses.user_timeline(screen_name = '@xyz', max_count= 30, include_entities=1 )
+#for tweet in statuses:
+#	try:
+#		for hashtag in tweet['entities']['hashtags']:
+#			print hashtag['text']
+#			hashtagtext = '#' +hashtag['text'] 
+#			hasharray.append(hashtagtext)
+#	except twitter.api.TwitterHTTPError as e:
+#		print("error: %s" % (str(e)))
 count = 5
 print hasharray
 newarray = []
