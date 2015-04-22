@@ -21,8 +21,10 @@ for k in hasharray:
 	stat = search_results['statuses']
 	for tweets in stat:
 		try:
+			#while using cron comment the below line to avoide encoding error!
 			print tweets['text'], '\n'
 			result = twitter_api.favorites.create(_id=tweets['id'])
+			#while using cron comment the below line to avoide encoding error!
 			print("favorited: %s" % (result['text'].encode("utf-8")))
 		except twitter.api.TwitterHTTPError as e:
 			print("error: %s" % (str(e)))
